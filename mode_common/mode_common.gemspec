@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject do |f|
       (File.expand_path(f) == __FILE__) ||
         f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor Gemfile]) || 
-        f.end_with?(*%w[.gemspec .gemfile .gitignore .rubocop.yml .rspec .travis.yml])
+        f.end_with?(*%w[.gem .gemspec .gemfile .gitignore .rubocop.yml .rspec .travis.yml])
     end
   end
   spec.bindir = "exe"
